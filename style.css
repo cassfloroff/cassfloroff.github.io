@@ -1,0 +1,22 @@
+
+#first{
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 100px;
+    margin-right: 20px;
+  width: 350px;
+}
+
+#second {
+    height: 500px;
+    margin-top: 100px;
+    width: 850px;
+}
+
+#footer {
+    max-width: 1220px;
+    margin-left: 55px;
+    margin-top: 30px;
+    height: 100px;
+    margin-bottom: 50px;
+}
