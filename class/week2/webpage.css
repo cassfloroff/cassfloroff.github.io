@@ -1,0 +1,22 @@
+.col-md-12 {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.col-md-2:nth-child(2) {
+    height: 500px;
+    margin-top: 10px;
+    margin-right:40px;
+}
+
+.col-md-2:nth-child(3) {
+    height: 500px;
+    width: 700px;
+    margin-top: 10px;
+}
+
+.col-md-2:nth-child(4) {
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
