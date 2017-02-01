@@ -12,11 +12,10 @@
     height: 100px;
 }
 
-.col-md-3:nth-child(1) {
-    
-}
-
-
 .row {
     padding: 10px;
+}
+
+body {
+    font-size: 20px;
 }

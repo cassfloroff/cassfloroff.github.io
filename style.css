@@ -1,0 +1,466 @@
+    @import url('https://fonts.googleapis.com/css?family=Bungee|Scope+One');
+
+/* Eric Meyer CSS Reset begins */
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* Eric Meyer CSS Reset ends */
+
+body {
+    background-color: rgba(255, 150, 61, 0.81);
+}
+
+/* crumpled paper background image and positioning */
+#profilepage, #photopage {
+    margin: 0 auto;
+    /* page styling */
+    background-image: url(../images/O5GLLH0.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* styling for all paragraphs */
+
+p {
+    font-size: 30px;
+    font-family: 'Scope One', serif;
+    line-height: 1.8;
+    color: black;
+
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: justify;
+    
+    animation-name: typed-cursor;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+/* profile page icons */
+/* person logo in nav bar */
+#mylogo {
+/* image resizing */
+    max-height: 60px;
+    max-width: 60px;
+    
+    /* forces logo to stay in place while scrolling */
+    position: fixed;
+    top: 7px;
+    left: 5px;
+    
+    /* pulls logo infront of nav so it is visible */
+    z-index: 2;
+}
+
+/*setup for homepage icons*/
+#firebase, #android, #java, #html{
+    height: 100px;
+    margin-left: 97px;
+    padding: 0px 50px 0px 50px;
+    
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.icons {
+    padding-top: 300px;
+}
+
+/* name annimation */
+h1:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+/* name in nav bar */
+h1 {
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    color: #363636;
+    /* forces nav to stay in place while scrolling */
+    position: fixed;
+    /* positions name to left allowing nav to follow to right */
+    float: left;
+    max-width: 120px;
+    top: 0;
+    margin: 15px 0px 0px 70px;
+    text-shadow: 2px 2px 5px rgb(255, 159, 99);
+    /* pulls name infront of nav bar so its visible */
+    z-index: 2;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.67);
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+}
+
+li {
+    font-family: 'Scope One', serif;
+    margin-top: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+ul {
+    margin-right: 10px;
+    text-align: right;
+}
+/*link styling*/
+a {
+    font-size: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    /* fade hover */
+}
+/* changes color when mouse hovers */
+
+ul > li > a:hover {
+    color: #ff963d;
+}
+
+/* PROFILE PAGE div */
+
+#profilepage {
+    height: 800px;
+}
+
+/* invidiual info divs for icons */
+#info {
+    display: none;
+    background-color: rgba(255, 150, 61, 0.81);
+    font-family: 'Scope One', serif;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+ 
+    max-width: 1000px;
+    height: 150px;
+}
+
+#android-info, #firebase-info, #java-info, #html-info {
+    display: none;
+}
+
+/*PROJECT PAGE DIV */
+
+#aboutpage {
+    height: 800px;
+}
+
+#aboutpage p {
+    line-height: 2;
+    color: white;
+    margin-top: 50px;
+}
+
+#aboutpage a {
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'Bungee', cursive;
+    font-size: 50px;
+    color: white;
+    padding-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+#photopage {
+    height: 800px;
+}
+
+#photopage p {
+    color: white;
+}
+
+/* photos */
+
+.marlee {
+    height: 500px;
+    margin: 0 auto;
+    padding: 130px 0px 0px 65px;
+}
+
+#marlee-info {
+    font-size: 26px;
+    display: none;
+    position: absolute;
+    left: 470px;
+    top: 0;
+    
+    padding: 10px;
+    margin-top: 1780px;
+    
+    max-width: 320px;
+    text-align: justify;
+}
+
+/* CONTACT PAGE DIV */
+
+#contactpage {
+    height: 800px;
+    text-align: right;
+}
+
+/* contact page icons */
+#email{
+    height: 200px;
+    padding-top: 350px;
+    float: left;
+    margin-left: 550px;
+    
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.myemail {
+    display: none;
+    font-family: 'Scope One', serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    
+    float: left;
+    margin-left: 400px;
+    max-width: none;
+}
+
+/*footer styling*/
+footer {
+    font-family: 'Scope One', serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+ @-webkit-keyframes pulse {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  50% {
+  -webkit-transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+     
+     @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*smartphone responsive design*/     
+     
+@media only screen and (max-width: 1000px) {
+    /* adjust the font size for smaller screens */
+    body {
+        background-color: #ff963d;
+    }    
+    
+    nav {
+        display: none;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    
+    .marlee {
+        display: none;   
+    }
+    
+     }
+        
