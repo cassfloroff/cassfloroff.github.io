@@ -29,7 +29,6 @@ body {
     height: 100%;
     /* For at least Firefox */
     min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
     position: absolute;
     top: 0;
@@ -186,4 +185,9 @@ nav, .nav .open>a, .nav .open>a:focus {
 h1 {
     font-size: 60px;
     text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
+
+}
+
+img {
+    height: 120px;
 }
