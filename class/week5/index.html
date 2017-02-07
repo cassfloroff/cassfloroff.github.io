@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 5 - Template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <style>
+    
+
+        .topRowLeft {
+            height: 50px;
+            max-height: 50px;
+            min-height: 50px;
+        }
+        
+        .topRowright {
+               height: 50px;
+            max-height: 50px;
+            min-height: 50px;
+        }
+        
+        .middleRow {
+            height: 400px;
+            max-height: 400px;
+            min-height: 400px;
+        }
+        
+        .bottomRow {
+            height: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            margin: 20px 0px 0px px;
+        }
+        
+        #text {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-top: 1.5%;
+        }
+        
+        #banana {
+            height: 40px;
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 2%;
+        }
+        
+        #orange {
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        #strawberry {
+            height: 40px;
+                position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+        }
+        
+        #eggplant {
+            height: 350px;
+            margin: 25px 0px 0px 400px;
+        }
+        
+        #grapes {
+            height: 100px;
+            margin: 25px 0px 0px 80px;
+        }
+        
+        #watermelon {
+            height: 100px;
+            margin: 25px 0px 0px 80px;
+        }
+        
+        #cherries {
+           height: 100px;
+            margin: 25px 0px 0px 80px;
+        }
+        
+        #pumpkin {
+            height: 100px;
+          margin: 25px 0px 0px 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="container"> <!--try container-fluid-->
+        <div class="row">
+            <div class="col-md-2 randomColor topRowLeft">
+                <img src="images/banana.svg" id="banana" alt="a-banana"/>
+            </div>
+            
+            <div class="col-md-8 topRowMiddle">
+               <p id="text"> Bonjour! Je m'appelle Cassandra!</p>
+            </div>
+        
+            <div class="col-md-1 randomColor topRowright">
+                <img src="images/orange.svg" id="orange" alt="an-orange"/>
+            </div>
+        
+            <div class="col-md-1 randomColor topRowright">
+                <img src="images/strawberry.svg" id="strawberry" alt="a-strawberry"/>
+            </div>
+        </div>
+            
+            <div class="row">
+            <div class="col-md-12 randomColor middleRow">
+                <img src="images/eggplant.svg" id="eggplant" alt="an-eggplant"/>
+            </div>
+    </div>
+            
+            <div class="row">
+            <div class="col-md-3 randomColor bottomRow">
+                <img src="images/grapes.svg" id="grapes" alt="some-grapes"/>
+            </div>
+
+            <div class="col-md-3 randomColor bottomRow">
+                <img src="images/watermelon.svg" id="watermelon" alt="some-watermelon"/>
+            </div>
+
+            <div class="col-md-3 randomColor bottomRow">
+                <img src="images/cherries.svg" id="cherries" alt="some-cherries"/>
+            </div>
+
+            <div class="col-md-3 randomColor bottomRow">
+                <img src="images/pumpkin.svg" id="pumpkin" alt="a-pumpkin"/>
+            </div>
+                            
+                        </div>
+                    </div>
+                
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+</body>
+
+</html>
