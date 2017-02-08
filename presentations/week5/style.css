@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700|Six+Caps';
+
+/* Eric Meyer CSS Reset begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS Reset ends */
+
+/* Typography */
+
+
+/* type settings for most of site */
+body{
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 300;
+    
+    background-color: black;
+    
+}
+
+/* heading sizes */
+h2,h3{ font-size: 150%; text-align: right; }
+
+header {
+    background-color: rgba(255, 255, 255, 0.74);
+    margin: -20px;
+    height: 135px;
+}
+
+
+#logo {
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    width: 100%;
+    
+    display: block;
+    margin: 0 auto;
+    padding: 30px 0px 10px 0px;
+}
+
+#mac {
+    width: 426px;
+    height: 450px;
+    
+    background-color: #FCC70D;
+    display: inline-block;
+}
+
+#playstation {
+    width: 426px;
+    height: 450px;
+    padding: 0;
+    
+    background-color: #ED633C;
+    display: inline-block;
+}
+
+#xbox {
+    width: 426px;
+    height: 450px;
+    
+    background-color: #91278E;
+    display: inline-block;
+}
+
+#mac img {
+   height: 300px;
+    margin: 0 auto;
+    display: block;
+
+    margin-top: 70px;
+}
+
+#playstation img {
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+
+    margin-top: 70px;
+}
+
+#xbox img {
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+
+    margin-top: 120px;
+}
+
+#game {
+    height: 300px;
+}
+
+#silver-cell {
+    margin-top: 100px;
+    
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+footer {
+    height: 300px;
+}
+
+#footer {
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+p2 {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 200px;
+    text-align: center;
+    
+    margin-top: 100px;
+}
+
+#mindmap, #mockup {
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
