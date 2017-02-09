@@ -104,6 +104,15 @@ header {
     margin-top: 160px;
 }
 
+#arrow {
+    height: 30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 .container {
     display: -webkit-box;
@@ -122,6 +131,15 @@ footer {
     margin-top: 200px;
 }
 
+p1 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+    margin-top: 50px;
+    color: #91278E;
+}
+
 p2 {
     color: white;
     display: block;
@@ -133,6 +151,27 @@ p2 {
     margin-top: 100px;
 }
 
+p3 {
+    color: #91278E;
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 200px;
+    text-align: center;
+    
+    margin-top: 50px;
+}
+
+p4 {
+    color: #FCC70D;
+    display: block;
+    margin: 0 auto;
+    
+    max-width: 200px;
+    text-align: center;
+    
+    margin-top: 100px;
+}
 #mindmap, #mockup {
     height: 400px;
     margin-left: 150px;
