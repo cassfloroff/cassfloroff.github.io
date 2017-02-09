@@ -47,6 +47,17 @@ header {
     display: inline-block;
 }
 
+#mac:hover{
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
 #playstation {
     width: 426px;
     height: 450px;
@@ -54,6 +65,18 @@ header {
     
     background-color: #ED633C;
     display: inline-block;
+}
+
+
+#playstation:hover{
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
 
 #xbox {
@@ -64,6 +87,18 @@ header {
     display: inline-block;
 }
 
+
+#xbox:hover{
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+-webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
 #mac img {
    height: 300px;
     margin: 0 auto;
@@ -71,6 +106,7 @@ header {
 
     margin-top: 70px;
 }
+
 
 #playstation img {
     height: 300px;
@@ -102,16 +138,48 @@ header {
     display: block;
     margin: 0 auto;
     margin-top: 160px;
+    
+      -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+header::after {
+    content: url(man.svg);
+     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 30%;
+    height: 30%;
+    margin-top: 150px;
+    margin-left: -260px;
+    
+    -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+   
 }
 
 #arrow {
-    height: 30px;
+    height: 25px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     
     display: block;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
+    
+     -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
 }
 
 .container {
@@ -121,11 +189,11 @@ header {
 }
 
 footer {
-    height: 300px;
+    height: 100px;
 }
 
 #footer {
-    height: 80px;
+    height: 70px;
     display: block;
     margin: 0 auto;
     margin-top: 200px;
@@ -145,10 +213,11 @@ p2 {
     display: block;
     margin: 0 auto;
     
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
     
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 p3 {
@@ -175,5 +244,148 @@ p4 {
 #mindmap, #mockup {
     height: 400px;
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 200px;
+}
+
+
+@-webkit-keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+  }
+}
+
+@-webkit-keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+      visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(450%, 0, 0);
+    transform: translate3d(450%, 0, 0);
+  }
 }
