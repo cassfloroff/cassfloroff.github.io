@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Sigmar+One');
 /* Links */
 
 a, a:focus, a:hover {
-    color: #fff;
+    color: #9d1919;
+    
 }
 
 
@@ -14,7 +16,7 @@ html, body {
 }
 
 body {
-    color: #fff;
+    color: #9d1919;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     position: relative;
@@ -60,25 +62,31 @@ body {
 .masthead-brand {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.84);
 }
 
 .masthead-nav>li {
     display: inline-block;
+    font-family: 'Gochi Hand', cursive;
 }
 
 .masthead-nav>li+li {
     margin-left: 20px;
+    font-family: 'Gochi Hand', cursive;
 }
 
 .masthead-nav>li>a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Gochi Hand', cursive;
     color: #fff;
     /* IE8 proofing */
     color: rgba(255, 255, 255, .75);
     border-bottom: 2px solid transparent;
+    
 }
 
 .masthead-nav>li>a:hover, .masthead-nav>li>a:focus {
@@ -90,6 +98,7 @@ body {
 .masthead-nav>.active>a, .masthead-nav>.active>a:hover, .masthead-nav>.active>a:focus {
     color: #fff;
     border-bottom-color: #fff;
+    
 }
 
 @media (min-width: 768px) {
@@ -106,9 +115,6 @@ body {
  * Cover
  */
 
-.cover {
-    padding: 0 20px;
-}
 
 .cover .btn-lg {
     padding: 10px 20px;
@@ -153,8 +159,10 @@ body {
 }
 
 @media (min-width: 992px) {
-    .masthead, .mastfoot, .cover-container {
-        width: 960px;
+    .masthead {
+        max-width: 1050px;
+        margin-left: 100px;
+
     }
 }
 
@@ -175,19 +183,37 @@ nav, .nav .open>a, .nav .open>a:focus {
 }
 
 .dropdown-menu>li>a:hover {
-    background-color: #b5cce0;
+    background-color: rgba(157, 25, 25, 0.62);
 }
 
 .dropdown-menu>li>a {
     padding: 1px 15px;
+    color: #9d1919;
+    font-size: 20px;
 }
 
 h1 {
-    font-size: 60px;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 30px;
     text-shadow: 0 3px 3px rgba(0, 0, 0, .5);
-
+    float: left;
+    max-width: 400px;
+    margin: 40px 0px 0px 0px;
 }
 
 img {
     height: 120px;
+}
+
+.lead {
+    font-family: 'Gochi Hand', cursive;
+    max-width: 400px;
+    float: right;
+    font-size: 25px;
+    margin: 50px 50px 0px 0px;
+}
+
+p {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 25px;
 }
