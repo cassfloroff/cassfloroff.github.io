@@ -241,12 +241,11 @@ p4 {
     
     margin-top: 100px;
 }
-#mindmap, #mockup {
-    height: 400px;
-    margin-left: 150px;
-    margin-top: 200px;
-}
 
+.planning {
+    margin-top: 100px;
+    margin-left: 40px;
+}
 
 @-webkit-keyframes zoomInDown {
   from {
