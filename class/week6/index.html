@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 6 - Centering</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <style>
+    
+
+        .topRowLeft {
+            height: 50px;
+            max-height: 50px;
+            min-height: 50px;
+        }
+        
+        .topRowright {
+               height: 30px;
+            max-height: 30px;
+            min-height: 30px;
+            margin: 10px 30px 0px 0px;
+        }
+        
+        .topRow {
+            height: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            margin: 10px 0px 0px 0px;
+        }
+        
+        
+        .middleRow {
+            height: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            margin: 10px 0px 0px 0px;
+        }
+        
+        .bottomRow {
+            height: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            margin: 10px 0px 0px 0px;
+            
+        }
+        
+        .textFirst, .textSecond {
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+        
+        .saggy {
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .saggy2 {
+            height: 100px;
+            display: inline-block;
+            margin-left: 5%;
+            margin-top: 6%;
+        }
+        
+        .saggy3 {
+            height: 50px;
+            display: inline-block;
+            margin-left: 9%;
+            margin-top: 13%;
+        }
+
+        .saggy4 {
+            height: 150px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .saggy5 {
+             height: 100px;
+            position: relative;
+            top: 20%;
+            left: 8%;
+        }
+        
+        .saggy6 {
+            height: 50px;
+            position: relative;
+            top: 30%;
+            left: 18%;
+        }
+        
+        .saggy7 {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .saggy8 {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .saggy9 {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="container"> <!--try container-fluid-->
+        <div class="row">
+            <div class="col-md-2 randomColor topRowLeft">
+
+            </div>
+            
+            <div class="col-md-6 topRowMiddle">
+
+            </div>
+        
+              <div class="col-md-1 randomColor topRowright">
+
+            </div>
+            <div class="col-md-1 randomColor topRowright">
+
+            </div>
+        
+            <div class="col-md-1 randomColor topRowright">
+ 
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 randomColor textFirst">
+                      <h1> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </h1>
+            </div>
+            <div class="col-md-12 randomColor textSecond">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus sapien dui, in venenatis erat lacinia eu. Praesent at mauris lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus sapien dui, in venenatis erat lacinia eu. Praesent at mauris lacus.  </p>
+                </div>
+            </div>
+            
+        
+        <div class="row">
+            <div class="col-md-4 randomColor topRow">
+                <img class="saggy" src="IMG_8097.JPG"/>
+
+            </div>
+                
+                <div class="col-md-4 randomColor topRow">
+                    <img class="saggy2" src="IMG_8097.JPG"/>
+                    <img class="saggy2" src="IMG_8097.JPG"/>
+
+            </div>
+                <div class="col-md-4 randomColor topRow">
+                    <img class="saggy3" src="IMG_8097.JPG"/>
+                    <img class="saggy3" src="IMG_8097.JPG"/>
+                    <img class="saggy3" src="IMG_8097.JPG"/>
+
+            </div>
+                
+    </div>
+        
+            <div class="row">
+            <div class="col-md-4 randomColor middleRow">
+            <img class="saggy4" src="IMG_8097.JPG"/>
+            </div>
+                
+                <div class="col-md-4 randomColor middleRow">
+                    <img class="saggy5" src="IMG_8097.JPG"/>
+                    <img class="saggy5" src="IMG_8097.JPG"/>
+            </div>
+                <div class="col-md-4 randomColor middleRow">
+                    <img class="saggy6" src="IMG_8097.JPG"/>
+                    <img class="saggy6" src="IMG_8097.JPG"/>
+                    <img class="saggy6" src="IMG_8097.JPG"/>
+            </div>
+                
+    </div>
+            
+            <div class="row">
+            <div class="col-md-4 randomColor bottomRow">
+                <img class="saggy7" src="IMG_8097.JPG"/>
+            </div>
+
+            <div class="col-md-4 randomColor bottomRow">
+<img class="saggy8" src="IMG_8097.JPG"/>
+                <img class="saggy8" src="IMG_8097.JPG"/>
+            </div>
+
+            <div class="col-md-4 randomColor bottomRow">
+                <img class="saggy9" src="IMG_8097.JPG"/>
+                <img class="saggy9" src="IMG_8097.JPG"/>
+                <img class="saggy9" src="IMG_8097.JPG"/>
+            </div>
+                            
+                        </div>
+                    </div>
+                
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+
+        $(document).ready(function() {
+
+            var bodyColumns = $(".randomColor");
+
+            bodyColumns.each(function() {
+
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+            })
+
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+        })
+    </script>
+</body>
+
+</html>
