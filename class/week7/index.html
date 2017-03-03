@@ -1,0 +1,61 @@
+<html>
+<head>
+    
+    </head>
+<body>
+    Hello Daddy!
+    <div id="myDiv">Look some sext!</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+        // () means execute function
+        // double slash means ignore this line
+        /*
+        everything between this is ignored
+        */
+        //alert("Hungry");
+        console.log("This is for debugging messages")
+        var pieces; 
+        var myanothervar = "Here is my another var";
+        
+        //alert(myanothervar);
+        console.log(myanothervar);
+        
+        //concatenation
+        
+        var Myname = "Floroff";
+        var myFirstname = "Cass"
+        alert("My name is "+Myname +" and my first name is "+myFirstname);
+        
+        function sayMyName(){
+        // everything in code blck will be executed!    
+        console.log("Your name is "+Myname);
+        }
+        
+        //calling the function
+        sayMyName();
+        
+        function sayMyName2(name){
+        // everything in code blck will be executed!    
+        console.log("Your name is "+name);
+        }
+        
+        //calling the function
+        sayMyName2("Cass");
+        sayMyName2("Saggs");
+        
+        /* When the document is ready, jQuery gets the element with id myDiv and calls the html function
+        html function will replace the html within the element*/
+        
+        $(document).ready(function(){
+        
+        //alert("the document is ready!");
+            
+        $('#myDiv').html("Hey, I was able to change the DOM but you still weren't able to change your ways..");
+        $('#myDiv').append("<br>The fuck");
+        });
+        
+    </script>
+    </body>
+</html>
