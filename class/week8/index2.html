@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 8 - bootstrap </title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+        .topRow {
+            height: 100px;
+        }
+        
+        .topRowMiddle {
+            height: 600px;
+        }
+        
+        .rowRight {
+            height: 300px;
+        }
+        
+        .middleRowLeft {
+            height: 300px;
+        }
+        
+        #dasani {
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        #purelife {
+            height: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .middleRight {
+            height: 600px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--try container-fluid-->
+        <div class="row">
+            <div class="col-md-12 randomColor topRow">
+            </div>
+
+            <div class="col-md-2 randomColor topRowMiddle">
+            </div>
+
+            <div class="col-md-8 randomColor middleRowLeft">
+                <div class="row">
+                    <div class="col-md-6 randomColor rowRight">
+                        <img src="images/dasani.png" id="dasani" />
+                    </div>
+
+                    <div class="col-md-6 randomColor topRowright">
+                        <img src="images/purelife.png" id="purelife" />
+                    </div>
+
+                    <div class="col-md-6 randomColor topRowright">
+                        <img src="images/smartwater.png" id="purelife" />
+                    </div>
+                    <div class="col-md-6 randomColor topRowright">
+                        <img src="images/voss.png" id="purelife" />
+                    </div>
+                    </div>
+
+        </div>
+            <div class="col-md-2 randomColor middleRight"></div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * max + min);
+            }
+
+            $(document).ready(function () {
+
+                var bodyColumns = $(".randomColor");
+
+                bodyColumns.each(function () {
+
+                    $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+                })
+
+                $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+
+
+            })
+        </script>
+</body>
+
+</html>
