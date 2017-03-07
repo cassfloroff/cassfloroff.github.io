@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 8</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    
+    <style>
+        #centerDiv {
+            text-align: center;
+        } 
+        
+        #centerDiv img {
+            height: 600px;
+        }
+        
+        #bottomDiv {
+            text-align: center;
+        }
+        
+        #bottomDiv img {
+            height: 600px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+        <div id="carDiv" class="col-md-12">
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="container">
+        <div class="row">
+        <div id="catDiv" class="col-md-12">
+            </div>
+        </div>
+    
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        var myString = "a string";
+        var myNumber = 2;
+        var myVar = "2";
+        var myBoolean = false;
+        
+        //array; declare with square brackets
+        //declaring an empty array
+        
+        var myArray = {};
+        
+        var myFullArray = ["Cass","Amanda","Tiger"];
+        
+        console.log(myFullArray[0]);
+        console.log("MyFullArray 2nd value = "+myFullArray[1]);
+        
+        var myMixArray = [3, "Mark", false];
+        myMixArray.push("another value");
+        console.log("myMixArray values: "+myMixArray);
+        
+        //type, price, mileage, color, fueltype, src
+        //when the page load, we go to a database and get some info about a car
+        
+        var car = {
+            type: "SUV",
+            price: 45000,
+            mileage: 24,
+            color: "magenta",
+            fuel: "electric",
+            src: "images/car1.jpg",
+            message : function(){
+                console.log("A car is useful!");
+            }
+            };
+            
+            var cat = {
+            breed: "bombay",
+            price: 300,
+            age: 1,
+            color: "black",
+            src: "images/cat1.jpg",
+            message : function(){
+                console.log("A cat is useful!");
+            }
+        };
+        
+        //object name.property
+        
+        console.log(car.type);
+        console.log(car.price);
+        console.log(car.message());
+        
+        console.log(cat.breed);
+        console.log(cat.price);
+        console.log(cat.message());
+        
+        $(document).ready(function(){
+            
+            
+        /* $("#carDiv").html("<div id='centerDiv'>"); 
+        $("#carDiv").append("<div> id='centerDiv'>"); 
+        $("#carDiv").html("<div"+car.type+"</div>");
+        $("#carDiv").append("<img src='"+car.src +"'/>")
+        $("carDiv").append("<div>"+car.price+"</div>"); */
+        
+        var myHtml = "<div id='centerDiv'>"+
+        "<div"+car.type+"</div>" +
+        "<img src='"+car.src +"'/>" +
+        "<div>"+car.price+"</div>" +
+        "</div>";
+            
+            $("#carDiv").html(myHtml);
+            
+            });
+        
+        $(document).ready(function(){
+            
+        var myHtml = "<div id='bottomDiv'>"+
+        "<div"+cat.breed+"</div>"+
+        "<img src='"+cat.src +"'/>"+
+        "<div>"+cat.price+"</div>"+
+        "</div>";
+        
+        $("#catDiv").html(myHtml);
+        });
+    </script>
+</body>
+
+</html>
