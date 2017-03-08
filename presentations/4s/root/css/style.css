@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Istok+Web|Quicksand');
+/* Eric Meyer CSS Reset begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS Reset ends */
+/* Typography */
+/* main body text font */
+body{
+    font-family: 'Istok Web', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+#logo {
+    width: 4.1em;
+    height: 4.1em;
+    padding: 15px;
+    
+    display: inline-block;
+    margin: 0;
+    float: left;
+}
+
+h1{
+    color: black;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+em {
+    font-size: 70px;
+}
+
+em:nth-child(1) {
+    font-size: 20px;
+} 
+
+
+/* heading fonts */
+h2, h3{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
+h1 p {
+    font-size: 20px;
+    margin-top: -10px;
+    color: black;
+    margin-bottom: 80px;
+}
+/* heading sizes */
+h1{ font-size: 200%; }
+
+
+/* space below common tags */
+
+/* general hyperlink styles */
+a{
+    color: black;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/* hyperlink hover effect */
+a:hover{
+    color: #006edd;
+    text-decoration: none;
+}
+/* Layout */
+/* ensures images never wider than their container */
+/* fixed width and centered in the page */
+.wrapper {
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+}
+/* Images and Colours */
+/* site background image*/
+
+
+#site-content {
+        position: relative;
+    z-index: 2;
+}
+
+
+.info p:nth-child(1) {
+    margin: 100px 0px 80px 0px;
+    font-size: 40px;
+    text-align: justify;
+    padding-bottom: 20px;
+    border-bottom: thin solid #6f6f6f;
+}
+
+.info p:nth-child(3) {
+    font-size: 25px;
+    text-align: justify;
+    margin-top: -15px;
+
+    
+    padding-bottom: 30px;
+    border-bottom: thin solid #6f6f6f;
+}
+
+#about {
+    height: 12em;
+    float: left;
+    padding-right: 40px;
+}
+
+.service p {
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: thin solid #6f6f6f;
+}
+
+#service {
+    height: 12em;
+    float: right;
+    padding: 0px 0px 40px 40px;
+}
+
+.contact p {
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 60px;
+}
+
+.contact p:nth-child(3) {
+    padding-bottom: 40px;
+    border-bottom: thin solid #6f6f6f;
+}
+
+footer {
+    height: 300px;
+}
+
+#buttons {
+    position: absolute;
+    margin-top: 20px;
+    
+    position: absolute;
+left: 50%;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%)
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    
+    font-size: 15px;
+    color: white;
+    border: thin solid #6f6f6f;
+}
+
+button:nth-child(1) {
+        background-color: #6f6f6f;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+button:nth-child(2) {
+    background-color: white;
+color: #6f6f6f;
+}
+
+button:active {;
+  box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+}

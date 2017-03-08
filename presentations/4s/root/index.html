@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4S SALES INC.</title>
+    <!-- main stylesheet link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 Shiv (for IE 8 and below) -->
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" id="logo" alt="logo"/>
+        <h1>4S SALES INC. <p>The Food Service Distributors</p></h1>
+    </header>
+        <div id="buttons">
+        </div>
+    <main id="site-content" class="wrapper">
+
+            <div class="info">
+                <p>We are a <em>small</em> company in the food service distribution industry, but <em>BIG</em> on service.</p>
+
+                <img id="about" src="images/about.png">
+                
+                <p>The founder, Sam Triumbari, recognized a need from the food service sector for quality products with economical pricing and good service from an efficient distribution network. He noticed that a lot of business owners are too busy to shop around from all the cash and carry outlets wasting their valuable time looking for products in huge warehouse facilities, standing in long lines to pay, soon after needing to load the heavy products from their cars to their front door.</p>
+            </div>
+                
+            <div class="service">   
+                <img id="service" src="images/service.png">
+                
+                <p>That is where we come in! Shop and devliver the products right to you! All for a nominal fee. This way you can spend more of your precious time doing what you do best, service your customers. We have partnered with <a target="_blank" href="http://mvrwholesale.com/">MVR Cash & Carry</a> in such a way that allows us to pick and deliver from over 20,000 food products and supplies stocked in their warehouse to your establishment. In essence, we are your ONE STOP SHOP!</p>
+            </div>
+
+
+
+            <div class="contact">
+                <img id="about" src="images/customers.png">
+                <p>Our customers include resturants, pizzerias, bakeries, hospitality, cafeterias, schools, banquet halls, caterers, etc. <a target="_blank" href="http://mvrwholesale.com/">MVR</a> warehouse offers a wide range of groceries, beverages, frozen products, fresh fruits and vegetables and even meat and poultry. We can also deliver packaging, cleaning, janitorial supplies as well as health and beauty aids, home and hardware supplies.</p>
+
+                <p>We service the Greater Toronto Area from Burlington to Barrie to Ajax. Our delivery days are Monday to Friday. All orders must be submitted before 2:00pm for next day delivery. Terms are COD, unless credit is established. Our nominal fee varies depending on volume and location.</p>
+            </div>
+    
+
+    </main>
+    <footer id="site-footer" class="wrapper">
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <script>
+        
+        $(document).ready(function(){
+            
+            var button = document.createElement("button");
+            var text = document.createTextNode("Become A Customer");
+            button.appendChild(text);
+            document.getElementById("buttons").appendChild(button);
+            
+            var button = document.createElement("button");
+            var text = document.createTextNode("Customer Login");
+            button.appendChild(text);
+            document.getElementById("buttons").appendChild(button);
+            
+        });
+        
+            
+    </script>
+</body>
+
+</html>
