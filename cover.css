@@ -80,7 +80,7 @@ body {
 .masthead-nav>li>a {
     padding-right: 0;
     padding-left: 0;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Gochi Hand', cursive;
     color: #fff;
     /* IE8 proofing */
@@ -189,7 +189,7 @@ nav, .nav .open>a, .nav .open>a:focus {
 .dropdown-menu>li>a {
     padding: 1px 15px;
     color: #9d1919;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 h1 {
